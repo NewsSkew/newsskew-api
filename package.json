@@ -1,0 +1,25 @@
+{
+  "name": "newsskew-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NewsSkew/newsskew-api.git"
+  },
+  "author": "jskipp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewsSkew/newsskew-api/issues"
+  },
+  "homepage": "https://github.com/NewsSkew/newsskew-api#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
