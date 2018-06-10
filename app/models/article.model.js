@@ -1,3 +1,9 @@
+/**
+ * Model for Article
+ * 
+ * @author jskipp
+ */
+
 const mongoose = require('../mongoose/mongoose.js');
 
 const Schema = mongoose.Schema;

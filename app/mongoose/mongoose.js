@@ -11,6 +11,8 @@ try {
 }
 
 console.log('MongoDB connecting to ' + mongodbURI);
-mongoose.connect(mongodbURI);
+mongoose.connect(mongodbURI, {
+    dbName: 'newsskew-prod',
+});
 
 module.exports = mongoose;
