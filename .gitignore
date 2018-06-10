@@ -1,2 +1,2 @@
 node_modules
-mongoose/mongodb.properties.json
+app/mongoose/mongodb.properties.json
