@@ -31,3 +31,23 @@ app.get('/article/:id', (req, res) => {
     });
 });
 
+/**
+ * Post a new Article
+ */
+app.post('/article', (req, res) => {
+    if (req && req.body && req.body.title && req.body.url && req.body.authorId && req.body.publisherId) {
+        articleService.create(req.body).then((article) => {
+            res.status(201);
+            res.send(article);
+        }, (err) => {
+            console.log(err);
+            res.status(400);
+            res.send();
+        });
+    } else {
+        console.log(req.body);
+        res.status(400);
+        return res.send();
+    }
+});
+
